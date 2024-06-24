@@ -1,0 +1,10 @@
+.showSlideMenu{
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 1s, opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.hideSlideMenu{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 1s, opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
