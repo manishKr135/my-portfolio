@@ -12,6 +12,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExperienceComponent } from './components/library/experience/experience.component';
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
+import { SafePipe } from './shared/pipes/safe.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { NgxPageScrollModule } from 'ngx-page-scroll';
     ProjectsComponent,
     SkillsComponent,
     CertificatesComponent,
-    ExperienceComponent
+    ExperienceComponent,
+    SafePipe,
   ],
   imports: [
     BrowserModule,
