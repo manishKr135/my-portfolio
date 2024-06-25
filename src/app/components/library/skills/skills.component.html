@@ -1,14 +1,14 @@
 <div id="skillsSection" class="bg-white py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skills</h2>
+        <h2 class="fancy-text text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Skills</h2>
         <p class="mt-2 mb-5 text-lg leading-8 text-gray-600">The One I acquired.</p>
         <button (click)="showAllSkills()" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-4 py-2 rounded">{{buttonText}}</button>
       </div>
       <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"></div>
       <div class="skills" #mySkills>
         <ng-container *ngFor="let skill of skills">
-          <span  class="inline-flex items-center rounded-md bg-{{skill.color}}-50 px-10 py-5 mb-5 mr-3 text-xl font-medium neon-border skill">{{skill.skillName}}</span>
+          <span  class="inline-flex items-center rounded-md bg-{{skill.color}}-50 px-10 py-5 mb-5 mr-3 text-xl font-medium  skill" animate [animateClass]="'neon-border'">{{skill.skillName}}</span>
         </ng-container>
         
       </div>

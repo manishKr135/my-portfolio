@@ -17,7 +17,7 @@ export class ExperienceComponent {
         "Managed a team of 4 people, increasing overall productivity by 40%.",
         "Migrated a web application running on Angular version 8 to version 16.",
         "Gained hands-on experience with multiple AWS services.",
-        "Became familiar with Azure DevOps (running build pipeline, creating release, deploying to different environments up to Production).",
+        "Became familiar with Azure DevOps.",
         "Designed multiple multipurpose Content types in Contentful, saving 10% of authoring time.",
         "Increased client satisfaction by 25% through effective communication and issue resolution.",
         "Successfully managed multiple client projects simultaneously, resulting in a 30% increase in client retention."
