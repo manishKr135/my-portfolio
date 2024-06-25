@@ -1,6 +1,6 @@
 <div id="headerSection" class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+      <nav class="fixed top-0  w-full shadow-md main-nav lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
           <!-- <a href="#" class="-m-1.5 p-1.5">
             <span class="sr-only">Your Company</span>
@@ -15,14 +15,14 @@
             </svg>
           </button>
         </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a pageScroll [pageScrollDuration]="500" href="#projectsSection" class="text-sm font-semibold leading-6 text-gray-900" target="_blank" rel="noopener">Projects</a>
-          <a pageScroll [pageScrollDuration]="600" href="#skillsSection" class="text-sm font-semibold leading-6 text-gray-900" target="_blank" rel="noopener">Skills</a>
-          <a pageScroll [pageScrollDuration]="700" href="#certificatesSection" class="text-sm font-semibold leading-6 text-gray-900" target="_blank" rel="noopener">Certificates</a>
-          <a pageScroll [pageScrollDuration]="1000" href="#experienceSection" class="text-sm font-semibold leading-6 text-gray-900" target="_blank" rel="noopener">Experiences</a>
-          <a href="https://www.linkedin.com/in/manish-kumar135" class="text-sm font-semibold leading-6 text-gray-900" target="_blank" rel="noopener">LinkedIn</a>
-          <a href="mailto:manishhhh135@gmail.com"  class="text-sm font-semibold leading-6 text-gray-900">Mail Me</a>
-          <a href="../assets/files/Manish-Kumar-Resume.docx" download="Manish-Kumar-Resume" class="text-sm font-semibold leading-6 text-gray-900">Resume</a>
+        <div class=" hidden lg:flex lg:gap-x-12">
+          <a pageScroll [pageScrollDuration]="500" href="#projectsSection" class="text-sm font-semibold leading-6 text-gray-900 jump-links" target="_blank" rel="noopener">Projects</a>
+          <a pageScroll [pageScrollDuration]="600" href="#skillsSection" class="text-sm font-semibold leading-6 text-gray-900 jump-links" target="_blank" rel="noopener">Skills</a>
+          <a pageScroll [pageScrollDuration]="700" href="#certificatesSection" class="text-sm font-semibold leading-6 text-gray-900 jump-links" target="_blank" rel="noopener">Certificates</a>
+          <a pageScroll [pageScrollDuration]="1000" href="#experienceSection" class="text-sm font-semibold leading-6 text-gray-900 jump-links" target="_blank" rel="noopener">Experiences</a>
+          <a href="https://www.linkedin.com/in/manish-kumar135" class="text-sm font-semibold leading-6 text-gray-900 jump-links" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="mailto:manishhhh135@gmail.com"  class="text-sm font-semibold leading-6 text-gray-900 jump-links">Mail Me</a>
+          <a href="../assets/files/Manish-Kumar-Resume.docx" download="Manish-Kumar-Resume" class="text-sm font-semibold leading-6 text-gray-900 jump-links">Resume</a>
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
         </div>
@@ -47,13 +47,13 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6" (click)="closeSlideMenu()">
-                <a pageScroll [pageScrollDuration]="700" href="#projectsSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Projects</a>
-                <a pageScroll [pageScrollDuration]="800" href="#skillsSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Skills</a>
-                <a pageScroll [pageScrollDuration]="1000" href="#certificatesSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Certificates</a>
-                <a pageScroll [pageScrollDuration]="1200" href="#experienceSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Experiences</a>
-                <a href="https://www.linkedin.com/in/manish-kumar135" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">LinkedIn</a>
-                <a href="mailto:manishhhh135@gmail.com"  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Mail Me</a>
-                <a href="../assets/files/Manish-Kumar-Resume.docx"  download="Manish-Kumar-Resume" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Resume</a>
+                <a pageScroll [pageScrollDuration]="700" href="#projectsSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">Projects</a>
+                <a pageScroll [pageScrollDuration]="800" href="#skillsSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">Skills</a>
+                <a pageScroll [pageScrollDuration]="1000" href="#certificatesSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">Certificates</a>
+                <a pageScroll [pageScrollDuration]="1200" href="#experienceSection" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">Experiences</a>
+                <a href="https://www.linkedin.com/in/manish-kumar135" target="_blank" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">LinkedIn</a>
+                <a href="mailto:manishhhh135@gmail.com"  class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">Mail Me</a>
+                <a href="../assets/files/Manish-Kumar-Resume.docx"  download="Manish-Kumar-Resume" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50 jump-links">Resume</a>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@
       </div>
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
         <div class="text-center">
-          <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi there, this is Manish.</h1>
+          <h1 class="fancy-text text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Hi there, this is <span class="fancy-text name">Manish</span>.</h1>
 
           <p class="mt-6 text-lg leading-8 text-gray-600">A web developer proficient in Angular, TypeScript, CSS and JavaScript, with a fair understanding of Node.js and its ecosystem. Familiar with AWS services.</p>
           <div class="mt-10 flex items-center justify-center gap-x-6">

@@ -8,3 +8,31 @@
     opacity: 0;
     transition: visibility 1s, opacity 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 }
+
+.main-nav{
+    backdrop-filter: blur(60px);
+    display: flex;
+    top: -20px !important;
+    padding-bottom: 10px !important;
+}
+  img:hover {
+    perspective: 1000;
+    transform-style: preserve-3d;
+    transform: rotate3d(0, 1, 0, 0deg);
+    animation: spin 1s  ease-out infinite ;
+    backface-visibility: inherit;
+  }
+
+@keyframes spin {
+    from{
+        transform: rotate3d(0, 1, 0, 0deg);
+    }
+    to{
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+.name{
+    border-bottom: 2px solid black;
+    border-style: dashed;
+    font-size: 3rem !important;
+}
