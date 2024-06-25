@@ -32,7 +32,30 @@
     }
 }
 .name{
-    border-bottom: 2px solid black;
+    display: inline-block;   
     border-style: dashed;
     font-size: 3rem !important;
+    width: fit-content;
+    line-height: 1.2em;
+    height:1.2em;
+    padding-top: 13px;
+    text-align: start;
+    overflow: hidden !important;
 }
+
+  .animateName:before {
+    content:"Manish.\A\A\A⌰anish\A⌰⍜nish\A⌰⍜⏃ish\A⌰⍜⏃⎅sh\A⌰⍜⏃⎅⟟h\A⌰⍜⏃⎅⟟⋏g\A⌰⍜⏃⎅⟟⋏☌\A⌰⍜⏃⎅⟟⋏☌⟒.\A⌰⍜⏃⎅⟟⋏.\A⌰⍜⏃⎅⟟⋏☌"; 
+    white-space: pre;
+    display: inline-block;
+    animation: l39 1s  steps(11) alternate;
+  }
+  
+  @keyframes l39 {
+    100%{transform: translateY(-100%)}
+  }
+
+  @media only screen and (max-width: 600px) {
+   .name{
+    text-align: center;
+   }
+  }

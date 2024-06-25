@@ -13,6 +13,7 @@ import { ExperienceComponent } from './components/library/experience/experience.
 import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
 import { NgxPageScrollModule } from 'ngx-page-scroll';
 import { SafePipe } from './shared/pipes/safe.pipe';
+import { AnimateDirective } from './shared/directives/animate.directive';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { SafePipe } from './shared/pipes/safe.pipe';
     CertificatesComponent,
     ExperienceComponent,
     SafePipe,
+    AnimateDirective,
   ],
   imports: [
     BrowserModule,

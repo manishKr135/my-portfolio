@@ -1,0 +1,13 @@
+
+.projects-slide {
+    transform: translateX(-50%);
+    animation: l39 1s ease-in-out forwards;
+  }
+  
+  @keyframes l39 {
+   
+    
+    100%{
+        transform: translateX(0%)
+    }
+  }
