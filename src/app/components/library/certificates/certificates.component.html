@@ -1,0 +1,23 @@
+<div id="certificatesSection" class="overflow-hidden bg-white py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Certificates and Awards</h2>
+      <p class="mt-2 mb-5 text-lg leading-8 text-gray-600">The One I earned.</p>
+      <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"></div>
+      <ng-container *ngFor="let certificate of certificationDetials">
+        <div class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 mb-10">
+          <div class="lg:pr-8 lg:pt-4">
+            <div class="lg:max-w-lg">
+              <h2 class="text-base font-semibold leading-7 text-indigo-600">{{certificate.certificateType}}</h2>
+              <p class="mt-2 text-2xl font-bold tracking-tight text-gray-900 sm:text-2xl">{{certificate.certificateName}}</p>
+              <p class="mt-6 text-lg leading-8 text-gray-600">{{certificate.certificateDescription}}</p>      
+            </div>
+          </div>
+          <img src="{{certificate.certificateImage}}" alt="Angular Developer Certificate" class="w-[18rem] max-w-600 rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0" width="2432" height="1442">
+        </div>
+      </ng-container>
+      <div class="mt-10 flex items-center justify-center gap-x-6 lg:justify-centertext-center">
+        <a href="https://www.linkedin.com/in/manish-kumar135/details/certifications" target="_blank" class="rounded-md bg-white px-3.5 py-2.5 text-md font-semibold text-gray-900 shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">View the full list by clicking here<span aria-hidden="true">&nbsp;→</span></a>
+        <a href="https://www.linkedin.com/in/manish-kumar135/details/honors/" target="_blank" class="rounded-md bg-white px-3.5 py-2.5 text-md font-semibold text-gray-900 shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Check the awards and honors here<span aria-hidden="true">&nbsp;→</span></a>
+      </div>
+    </div>
+  </div>
