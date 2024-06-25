@@ -10,6 +10,8 @@ import { SkillsComponent } from './components/library/skills/skills.component';
 import { CertificatesComponent } from './components/library/certificates/certificates.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ExperienceComponent } from './components/library/experience/experience.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ExperienceComponent } from './components/library/experience/experience.
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgxPageScrollCoreModule,
+    NgxPageScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

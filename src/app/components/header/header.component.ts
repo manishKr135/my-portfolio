@@ -21,4 +21,9 @@ showeSlideMenu(){
   this.slideMenu.nativeElement.classList.remove('hideSlideMenu');
   this.slideMenu.nativeElement.classList.add('showSlideMenu');
 }
+
+scrollToElement($element: any): void {
+  console.log($element);
+  $element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+}
 }
