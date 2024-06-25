@@ -13,8 +13,12 @@ article{
   border-radius: 50px;
   box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
 }
+
+.ps{
+  transform: translateX(-40%);
+}
 .projects-slide {
-    transform: translateX(-50%);
+
     animation: l39 1s ease-in-out forwards;
   }
   

@@ -8,8 +8,8 @@
     filter: blur(0px) !important;
 }
 .skill:hover{
-    transform: scale3d(1.2,1.2,1.2);
-    transition: transform 0.5s ease-out ;
+    transform: scale3d(1.2,1.2,1.2) !important;
+    transition: transform 0.5s ease-out !important;
 }
 
 .skill:not(:hover){
@@ -34,7 +34,7 @@
   border-radius: 5px;
   border-bottom: 2px solid #cbe056; /* neon green */
   border-right: 0px solid #cbe056; /* neon green */
-  animation: blink 1s alternate ease-in-out infinite ;
+  animation: blink 1s alternate ease-in-out forwards ;
 }
 
 
@@ -43,12 +43,14 @@
     border-bottom: 2px solid #cbe056; /* neon green */
     border-right: 0px solid #cbe056; /* neon green */
     border-color: #eddfb6; /* neon green */
-    
+    transform: translateX(100%);
   }
 
   to {
-    border-bottom: 0px solid #cbe056; /* neon green */
+    border-bottom: 2px solid #cbe056; /* neon green */
     border-right: 2px solid #cbe056; /* neon green */
     border-color: #e2cba1; /* neon green */
+    transform: translateX(0%);
   }
 }
+
