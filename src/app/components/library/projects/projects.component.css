@@ -1,4 +1,18 @@
 
+article{
+  padding: 1.5rem;
+  background: #fbf7f7dc;
+  border-radius: 20px;
+  box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), inset 5px 5px 9px rgba(94,104,121,0.3);
+
+}
+
+.dev-info{
+  padding: 1.5rem;
+  background: #f6f6f6dc;
+  border-radius: 50px;
+  box-shadow: -5px -5px 9px rgba(255,255,255,0.45), 5px 5px 9px rgba(94,104,121,0.3);
+}
 .projects-slide {
     transform: translateX(-50%);
     animation: l39 1s ease-in-out forwards;
