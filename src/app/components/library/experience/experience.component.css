@@ -1,8 +1,9 @@
 .lp{
-    transform: translateX(20%);
+    transform: translateX(10%);
+   
 }
 .rp{
-    transform: translateX(-20%);
+    transform: translateX(-50%);
 }
 .slide-in {
     animation: l39 1s ease-in-out forwards;

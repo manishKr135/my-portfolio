@@ -54,3 +54,15 @@
   }
 }
 
+
+@media(max-width: 767px){
+  .neon-border::after{
+    animation: none;
+  }
+
+}
+@media(max-width: 574px){
+  .neon-border::after{
+    animation: none;
+  }
+}
