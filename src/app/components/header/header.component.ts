@@ -1,4 +1,5 @@
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
+import {PROFILE_IMAGE} from '../../shared/constants/constants';
 
 @Component({
   selector: 'app-header',
@@ -7,10 +8,11 @@ import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 })
 export class HeaderComponent implements AfterViewInit{
 @ViewChild('slideMenu') slideMenu: ElementRef = {} as ElementRef;
-
+profileImage: string = PROFILE_IMAGE;
 ngAfterViewInit(): void{
 
 }
+
 
 closeSlideMenu(){
   this.slideMenu.nativeElement.classList.add('hideSlideMenu');

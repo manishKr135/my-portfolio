@@ -1,11 +1,15 @@
 import { Component } from '@angular/core';
+import { PROFILE_IMAGE } from 'src/app/shared/constants/constants';
+import { NAME } from 'src/app/shared/constants/constants';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.css']
+  styleUrls: ['./projects.component.css'],
 })
 export class ProjectsComponent {
+  profileImage: string = PROFILE_IMAGE;
+  name: string = NAME;
   //Projects
   projects = [
     {
@@ -14,9 +18,9 @@ export class ProjectsComponent {
       heading: '15 Puzzle',
       appUrl: 'https://one5-puzzleversion2.onrender.com',
       description: `The 15 Puzzle Game, also known as the "Sliding Puzzle" or "Fifteen Puzzle," is a classic mathematical puzzle game that has been entertaining people for over a century.`,
-      image: `https://media.licdn.com/dms/image/D4E03AQHUiGtuI9_7BQ/profile-displayphoto-shrink_800_800/0/1697716267135?e=1724889600&v=beta&t=cz9kML8OtMgRXutekR98I3T1LGA900U4BzcZs_NapqQ`,
+      image: this.profileImage,
       devTitle: 'Developer',
-      devName: 'Manish Kumar'
+      devName: this.name,
     },
     {
       year: 'In Development',
@@ -24,10 +28,9 @@ export class ProjectsComponent {
       heading: 'Click-o-Eat',
       appUrl: 'https://click-o-eat.onrender.com',
       description: `A food ordering website mockup which uses json-server for data handeling.`,
-      image: `https://media.licdn.com/dms/image/D4E03AQHUiGtuI9_7BQ/profile-displayphoto-shrink_800_800/0/1697716267135?e=1724889600&v=beta&t=cz9kML8OtMgRXutekR98I3T1LGA900U4BzcZs_NapqQ`,
+      image: this.profileImage,
       devTitle: 'Developer',
-      devName: 'Manish Kumar'
+      devName: this.name,
     },
   ];
-
 }

@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProjectsComponent } from './projects.component';
+import { AnimateDirective } from 'src/app/shared/directives/animate.directive';
 
 describe('ProjectsComponent', () => {
   let component: ProjectsComponent;
@@ -8,7 +9,7 @@ describe('ProjectsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ProjectsComponent]
+      declarations: [ProjectsComponent, AnimateDirective],
     });
     fixture = TestBed.createComponent(ProjectsComponent);
     component = fixture.componentInstance;

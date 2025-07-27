@@ -1,12 +1,34 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { ProjectsComponent } from './components/library/projects/projects.component';
+import { SkillsComponent } from './components/library/skills/skills.component';
+import { CertificatesComponent } from './components/library/certificates/certificates.component';
+import { ExperienceComponent } from './components/library/experience/experience.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { NgxPageScrollCoreModule } from 'ngx-page-scroll-core';
+import { NgxPageScrollModule } from 'ngx-page-scroll';
 
 describe('AppComponent', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [RouterTestingModule],
-    declarations: [AppComponent]
-  }));
+  beforeEach(() =>
+    TestBed.configureTestingModule({
+      imports: [
+        RouterTestingModule,
+        NgxPageScrollCoreModule,
+        NgxPageScrollModule,
+      ],
+      declarations: [
+        AppComponent,
+        HeaderComponent,
+        ProjectsComponent,
+        SkillsComponent,
+        CertificatesComponent,
+        ExperienceComponent,
+        FooterComponent,
+      ],
+    })
+  );
 
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
@@ -20,10 +42,5 @@ describe('AppComponent', () => {
     expect(app.title).toEqual('portfolio');
   });
 
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('portfolio app is running!');
-  });
+  
 });
