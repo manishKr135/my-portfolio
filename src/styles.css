@@ -3,10 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+FR+Moderne:wght@278&family=Playwrite+IN&family=Potta+One&family=Rubik+Doodle+Triangles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Macondo&display=swap');
 body{
-    font-family: "Playwrite FR Moderne", cursive;
+    font-family: "Exo 2", sans-serif;;
     font-optical-sizing: auto;
-    font-weight: 200;
+    font-weight: 400;
     font-style: normal;
 }
 .jump-links{
